@@ -1,17 +1,29 @@
+:root{
+    --green:rgb(68, 106, 70);
+    --dark-pink:rgb(228, 150, 170);
+    --light-pink:rgb(255, 196, 221);
+    --light-green:rgb(130, 162, 132);
+}
+
 
 header {
-    background-color:rgb(12, 61, 70);
-    margin:0;
-   width: 100%;
+    background-color:var(--green);
+    width: 100%;
+    padding: 5px;
+    margin:0px;
     
 }
 body{
-    background-color:rgb(23, 134, 154);
+    background-color:var(--light-green);
 }
 
 .container {
+    
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
+    border:var(--dark-pink) solid 2px
+   
 }
 
 .row {
@@ -20,19 +32,28 @@ body{
 }
 
 .nav {
-    padding: 5px;
+    /* border:var(--dark-pink) solid 2px; */
+    padding: 0px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #ffffff;
+    background-color: var(--green);
     display:flex;
     justify-content:flex-end;
     width:100%
 }
 
 .nav-button { 
-    padding:20px;
-    background-color: rgb(99, 146, 154);
-    height:10px;
-    width: 15px;
+   
+    background-color: var(--light-pink);
+    color: var(--green);
+    font-size: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 10px 20px;
+    cursor: pointer;
+    border-radius: 16px;
+ 
 }
 
 #intro-image {
@@ -41,24 +62,33 @@ max-height: 200px;
 
 }
 
-h1, h2 {
+h1 {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: whitesmoke
 }
 #C {
-    color: rgb(198, 19, 121);
+    color:var(--dark-pink);
+    font-size: 150%;
+}
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--light-pink);
 }
 
+
 .work-images{
-    float:left
+    float:left;
 }
 
 aside {
     float:right;
+    margin-top: 20px;
     padding: 20px;
     width: 20%;
     height: 100%;
-    background-color: #2589bd;  
+    background-color: var(--light-green);  
+    border:var(--dark-pink) solid 2px
+    
     }
 
 aside img {
