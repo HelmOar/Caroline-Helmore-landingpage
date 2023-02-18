@@ -5,7 +5,10 @@
     --light-green:rgb(130, 162, 132);
 }
 
-
+body{
+    background-color:var(--light-green);
+    margin:0%;
+}
 header {
     background-color:var(--green);
     width: 100%;
@@ -13,16 +16,15 @@ header {
     margin:0px;
     
 }
-body{
-    background-color:var(--light-green);
-}
+
 
 .container {
-    
+    /* margin left  */
+    margin-left:20%;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    border:var(--dark-pink) solid 2px
+  
    
 }
 
@@ -83,6 +85,7 @@ h2 {
 aside {
     float:right;
     margin-top: 20px;
+    margin-right: 10%;
     padding: 20px;
     width: 20%;
     height: 100%;
@@ -94,7 +97,7 @@ aside {
 aside img {
     width: 100px;
     height: auto;
-    border:solid rgb(12, 61, 70) 5px
+    border:solid var(--green) 5px
     
     }
     
@@ -114,8 +117,35 @@ aside img {
 }
 
 .project-description {
-    color: yellow;
+    color: black;
     font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    font-weight: bolder;
+
+}
+
+#page-container {
+    position:relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 2.5rem;
+}
+
+#footer {
+    position:absolute;
+    margin-top: 20px ;
+    left:0px;
+    bottom:0px;
+    height:2.5rem;
+    width:100%;
+    color: var(--green);
+    background-color: var(--light-pink);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+    text-align: center;
 }
 
 @media screen and (max-width: 500px) {
